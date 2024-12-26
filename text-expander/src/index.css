@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+div.hidden,
+div.allhidden {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-clamp: 1;
+  max-width: 100px;
+}
+div.expanded,
+div.allvisible {
+  display: block;
+  width: 100%;
+}
+
+button.hidden,
+button.expanded {
+  color: blue;
+}
+
+button.allhidden,
+button.allvisible {
+  color: orange;
+}
