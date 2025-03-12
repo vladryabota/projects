@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+header{
+    background-color: black;
+    margin-bottom: 30px;
+}
+.hor-menu{
+    max-width: 1180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.hor-menu li a{
+    text-decoration: none;
+    transition: all 0.2s;
+    opacity: 0.8;
+}
+.hor-menu li:hover a{
+    opacity: 1;
+}
+.hor-menu li a i{
+    margin-right: 5px;
+    color: #fff;
+    font-size: 20px;
+}
+.hor-menu li:nth-child(3){
+    display: none;
+}
+
+.hor-menu li a{
+    color:#398CE6 ;
+    font-family: 'Roboto';
+}
+.hor-menu li{
+    margin: 20px 0;
+    font-size: 20px;
+}
+.hor-menu li:last-child{
+    margin-right: 0px;
+}
+.hor-menu li form.search-bar input{
+    border:none;
+    outline: none;
+    border-radius: 2px;
+    width: 100px;
+    padding: 3px;
+}
+.hor-menu li form.search-bar input:focus {
+    background-color: #ccc;
+}
+.hor-menu li form.search-bar button{
+    padding: 1px;
+    cursor: pointer;
+}
+.hor-menu li form.search-bar{
+    align-content: center;
+}
+.hor-menu li form.search-bar input[placeholder="Hledám..."]{
+    color: black;
+    font-family:'Roboto';
+}
+
+@media all and (min-width:768px){
+    .hor-menu li form.search-bar input{
+        width: 150px;
+    }
+    .hor-menu li:nth-child(3){
+        display: block;
+    }
+    .hor-menu li{
+        margin: 20px 0;
+        font-size: 20px;
+    }
+}
+@media all and (min-width:1024px){
+    .hor-menu li:nth-child(3){
+        display: block;
+    }
+    .hor-menu li form.search-bar input{
+        width: 150px;
+    }
+}

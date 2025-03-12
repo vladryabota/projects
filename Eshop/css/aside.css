@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+#slideaside {
+    width: 320px; /*320*/
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -320px; /*-320px*/
+    z-index: 100000;
+    overflow: auto;
+}
+#slideaside a, .aside-footer p{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Roboto';
+}
+.aside-footer p{
+    text-align: center;
+}
+#closeaside i{
+    margin-bottom: 40px;
+}
+.list-aside li:hover{
+    opacity: 1;
+}
+.list-aside li{
+    margin-bottom: 10px;
+    opacity: 0.75;
+    transition: all , 0.2s;
+}
+.list-aside li:last-child{
+    margin-bottom: 30px;
+}
+.list-aside li i{
+    margin-left: 5px;
+}
+.categories-list li:hover{
+    opacity: 1;
+}
+.categories-list li{
+    margin-bottom: 10px;
+    opacity: 0.75;
+    transition: all , 0.2s;
+}
+.categories-list li:last-child{
+    margin-bottom: 30px;
+}
+.categories-list li i{
+    margin-left: 5px;
+}
+.socials{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.socials li{
+    margin: 0 30px;
+    transition: all, 0.2s;
+    opacity: 0.8;
+}
+.socials li:hover{
+    opacity: 1;
+}
+.socials li a{
+    text-decoration: none;
+    text-align: center;
+}
+.socials li a i{
+    color: #fff;
+    font-size: 20px;
+}
+

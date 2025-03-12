@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+.main-footer{
+    background-color: black;
+}
+.text-footer a{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Roboto';
+    margin: 10px 0;
+    display: block;
+    transition: all, 0.2s;
+    opacity: 0.8;
+}
+.text-footer a:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+.main-footer .text-footer p{
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Roboto';
+}
+.main-footer .socials{
+    width: 40%;
+}
+.main-footer .socials li{
+    margin: 0 auto;
+}
+@media all and (min-width:1024px){
+    .main-footer .socials{
+        width: 20%;
+    }
+}
