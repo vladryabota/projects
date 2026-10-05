@@ -1,0 +1,99 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum SourceType {
+  RSS
+  API
+  SCRAPER
+}
+
+enum ArticleStatus {
+  DISCOVERED
+  FETCHED
+  SUMMARIZED
+  PENDING_REVIEW
+  APPROVED
+  REJECTED
+  PUBLISHED
+  FAILED
+}
+
+enum ArticleCategory {
+  HEALTH
+  SPACE
+  POLITICS
+  CRIME
+  TECHNOLOGY
+  SCIENCE
+  EMERGENCY
+  OTHER
+}
+
+model Source {
+  id       String          @id @default(uuid())
+  name     String
+  url      String          @unique
+  type     SourceType      @default(RSS)
+  category ArticleCategory @default(OTHER)
+  active   Boolean         @default(true)
+
+  articles Article[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  lastFetchedAt DateTime?
+  lastFetchStatus String?
+  lastFetchError String?
+}
+
+model User {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  passwordHash String
+  role         UserRole @default(ADMIN)
+
+  refreshTokens RefreshToken[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model RefreshToken {
+  id        String   @id @default(uuid())
+  tokenHash String   @unique
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+enum UserRole {
+  ADMIN
+}
+
+model Article {
+  id String @id @default(uuid())
+
+  sourceId String
+  source   Source @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+
+  title   String
+  url     String @unique
+  rawText String?
+  summary String?
+
+  category ArticleCategory @default(OTHER)
+  status   ArticleStatus   @default(DISCOVERED)
+
+  publishedAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}

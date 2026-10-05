@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies (each sub-project also has its own)
+node_modules/
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Editors
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+
+# Logs
+*.log
