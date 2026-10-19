@@ -1,8 +1,3 @@
-<img width="1280" height="627" alt="image" src="https://github.com/user-attachments/assets/ee2c277f-0741-48d3-b0b9-d26f21ca050e" />
-<img width="1280" height="599" alt="image" src="https://github.com/user-attachments/assets/42aaa5d3-b3ef-4e1a-8e84-b5d7882adb77" />
-<img width="1280" height="636" alt="image" src="https://github.com/user-attachments/assets/50235ea7-6e1d-4926-aabc-e95a55a26bf8" />
-
-
 # AI News Platform
 
 A full-stack web application for working with AI-related news, built with Next.js, NestJS, TypeScript, and Prisma. The platform also includes AI-powered article summaries generated with Ollama using a locally running language model.
@@ -173,7 +168,9 @@ The exact folder layout may vary. The main responsibilities are:
 
 ## Screenshots
 
-_Add screenshots of the application here._
+<img width="1280" height="627" alt="image" src="https://github.com/user-attachments/assets/ee2c277f-0741-48d3-b0b9-d26f21ca050e" />
+<img width="1280" height="599" alt="image" src="https://github.com/user-attachments/assets/42aaa5d3-b3ef-4e1a-8e84-b5d7882adb77" />
+<img width="1280" height="636" alt="image" src="https://github.com/user-attachments/assets/50235ea7-6e1d-4926-aabc-e95a55a26bf8" />
 
 
 ## Author
