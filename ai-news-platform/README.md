@@ -175,9 +175,6 @@ The exact folder layout may vary. The main responsibilities are:
 
 _Add screenshots of the application here._
 
-## Live Demo
-
-_Add a live demo URL here if the application is deployed._
 
 ## Author
 
