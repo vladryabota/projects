@@ -1,3 +1,5 @@
+<img width="1280" height="627" alt="image" src="https://github.com/user-attachments/assets/ee2c277f-0741-48d3-b0b9-d26f21ca050e" />
+
 # AI News Platform
 
 A full-stack web application focused on AI-related news, built with Next.js, NestJS, TypeScript, and Prisma.
